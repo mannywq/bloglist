@@ -2,6 +2,7 @@ const dummy = require('../utils/list_helper').dummy
 const totalLikes = require('../utils/list_helper').totalLikes
 const favouriteBlog = require('../utils/list_helper').favouriteBlog
 const mostBlogs = require('../utils/list_helper').mostBlogs
+const mostLikes = require('../utils/list_helper').mostLikes
 
 test('dummy returns one', () => {
     const blogs = []
@@ -148,6 +149,13 @@ describe('favouriteBlog', () => {
         console.log(res)
     
 
+      })
+
+      test('who has the most likes', () => {
+
+        const res = mostLikes(blogs)
+
+        console.log(res)
       })
 
 })
